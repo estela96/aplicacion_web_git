@@ -1,0 +1,38 @@
+/*Estilo de toda la página*/
+body{
+	background-color: #632432;
+	font-family: Arial;
+}
+
+#main-container{
+	margin: 105px auto;
+	width: 600px;
+}
+/*Darle estilo a la tabla*/
+table{
+	background-color: white;
+	text-align: left;
+	/*Quitar bordes de las celdas*/
+	border-collapse: 0;
+	width: 100%;
+}
+
+th, td{
+	/*espacio entre celdas*/
+	padding: 20;
+}
+/*Encabezado de la tabla*/
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F3620;
+	color: white;
+}
+/*iluminar las celdas hijos par sin seleccionar el encabezado*/
+tr:nth-child(even){
+	background-color: #ddd;
+}
+/*iluminar las filas a exepcion del encabezado*/
+tr:hover td{
+	background-color: #369681;
+	color:white;
+}
