@@ -42,3 +42,28 @@ tr:hover td{
 	background-color: #369681;
 	color:white;
 }
+/*contenedor de los botones*/
+div{
+	position: absolute;
+	top: 500px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+/*Estilos a los botones*/
+.button{
+	text-decoration: none;
+	padding: 10px;
+	font-weight: 600;
+	font-size: 20px;
+	color: #ffffff;
+	background-color: #1883ba;
+	border-radius: 6px;
+	border: 2px solid #0016b0;
+
+}
+/*Accion cuando pasamos el ratón por encima del botón*/
+.button:hover{
+	color: #1883ba;
+	background-color: #ffffff;
+}
