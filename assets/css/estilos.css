@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffacd;
+    /*background-size: cover;*/
+   /* background-attachment: fixed;
+    font-family: Roboto;*/
+}
+/*Darle estilo a la etiqueta principal de html con clase contenerdor form*/
+.contenedor-form {
+    background: rgba(0,0,0,.7);
+    max-width: 500px;
+    width: 100%;
+    /*max-width: 500px*/
+    margin: 48px auto;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+    /*padding: 40px;*/
+}/*Estilo a la clase toggle (botón de crear usuario)*/
+.contenedor-form .toggle {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #8fbc8f;
+    border-bottom: 2px solid #8fbc8f;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form .toggle:hover {
+    border-top: 2px solid #00BFFF;
+    border-bottom: 2px solid #00BFFF;
+}
+/*espacio de las letras*/
+.contenedor-form .toggle span {
+    letter-spacing: 1px;
+}
+/*estilos de h2*/
+.contenedor-form h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/*Estilo a los inputs de html*/
+.contenedor-form input[type="text"],
+.contenedor-form input[type="text"],
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"] {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #8fbc8f;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+/*Animación de cambiar el color del borde*/
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus {
+    border-bottom: 4px solid #00BFFF;
+}
+/*Estilo de los botones*/
+.contenedor-form input[type="submit"] {
+    background: #8fbc8f;
+    color: #FFF;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+/*Animación del botón*/
+.contenedor-form input[type="submit"]:hover {
+    background: #00BFFF;
+}
+
+.contenedor-form .formulario {
+    padding: 40px;
+    display: none;
+}
+
+.contenedor-form .formulario:nth-child(2) {
+    display: block;
+}
