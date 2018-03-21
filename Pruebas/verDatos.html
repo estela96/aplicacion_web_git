@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<?php
+// Te recomiendo utilizar esta conección, la que utilizas ya no es la recomendada. 
+$link = new PDO('mysql:host=localhost;dbname=baseIceCream', 'root', ''); // el campo vaciío es para la password. 
+?>
+<table class="table table-striped">  	
+		<thead>
+		<tr>
+			<td>Id</td>
+			<td>Nombre</td>
+			<td>Apellido</td>
+			<td>IdHelado</td>
+			<td>Sabor</td>
+			<td>Tipo de Cono</td>
+			<td>Tipo de Helado</td>
+			<td>Medida</td>
+			<td>Precio</td>
+			<td>Llave foranea</td>			
+		</tr>
+		</thead>
+<?php foreach ($link->query('SELECT * from Usuario') as $row){ // aca puedes hacer la consulta e iterarla con each. ?> 
+<tr>
+	<td><?php echo $row['IdUsuario'] // aca te faltaba poner los echo para que se muestre el valor de la variable.  ?></td>
+    <td><?php echo $row['nombre'] ?></td>
+    <td><?php echo $row['apellido'] ?></td>
+    <td><?php echo $row['id'] ?></td>
+    <td><?php echo $row['nombre'] ?></td>
+    <td><?php echo $row['apellido'] ?></td>
+ </tr>
+<?php
+	}
+?>
+</table>
+<table class="table table-striped">  	
+		<thead>
+		<tr>
+			<td>IdHelado</td>
+			<td>Sabor</td>
+			<td>Tipo de Cono</td>
+			<td>Tipo de Helado</td>
+			<td>Medida</td>
+			<td>Precio</td>
+			<td>Llave foranea</td>			
+		</tr>
+		</thead>
+<?php foreach ($link->query('SELECT * from helado') as $row){ // aca puedes hacer la consulta e iterarla con each. ?> 
+<tr>
+	<td><?php echo $row['Id'] // aca te faltaba poner los echo para que se muestre el valor de la variable.  ?></td>
+    <td><?php echo $row['sabor'] ?></td>
+    <td><?php echo $row['tipoCon'] ?></td>
+    <td><?php echo $row['tipohelado'] ?></td>
+    <td><?php echo $row['tipoTam'] ?></td>
+    <td><?php echo $row['Precio'] ?></td>
+    <td><?php echo $row['IdUsuario'] ?></td>
+ </tr>
+<?php
+	}
+?>
+</table>
+</body>
+</html>
