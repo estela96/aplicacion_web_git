@@ -13,8 +13,11 @@ $medida = $_POST["Medida"];
 $precio = $_POST["Precio"];
 
 // Abrimos la conexion a la base de datos    
-include("abre_conexion.php");    
-
+include("abre_conexion.php"); 
+//Conexion a la base de datos
+$conexion = mysql_connect("localhost", "user","password");
+mysql_database("baseIceCream",$conexion);
+//Solicitudes  a la base de datos
 $_GRABAR_SQL = "INSERT INTO $Usuario (nombre,apellido) VALUES ('$nombre','$apellido')";
 $_GRABAR = "INSERT INTO $helado (sabor,TipoDeCono,TipoDeHelado,Medida,Precio) VALUES ('$sabor','$tipoCono','tipoHelado','medida','precio')";   
 mysql_query($_GRABAR_SQL);   
