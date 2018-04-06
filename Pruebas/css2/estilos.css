@@ -1,8 +1,18 @@
 /*Estilo de toda la página*/
 body{
-	background-color: #632432;
+	background-image: url("img/helados2.jpg");
 	font-family: Arial;
 	text-align: center;
+	/*text-align: center;*/
+	background-position: center center;
+    /* La imagen de fondo no se repite */
+    background-repeat: no-repeat;
+    /* La imagen de fondo está fija en el viewport, de modo que no se mueva cuando la altura del contenido supere la altura de la imagen. */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala cuando se cambia el ancho de ventana del navegador */
+    background-size: cover;
+    /* Fijamos un color de fondo para que se muestre mientras se está cargando la imagen de fondo o si hay problemas para cargarla  */
+    background-color: #464646;
 }
 
 #main-container{
@@ -12,7 +22,10 @@ body{
 /*Darle estilo al encabezado */
 h1{
 	font-weight: normal;
-	color: white;
+	color: #A901DB;
+	font-family: Times New Roman, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 250%;
 }
 /*Darle estilo a la tabla*/
 table{
@@ -29,8 +42,8 @@ th, td{
 }
 /*Encabezado de la tabla*/
 thead{
-	background-color: #246355;
-	border-bottom: solid 5px #0F3620;
+	background-color: #013ADF;
+	border-bottom: solid 5px #0489B1;
 	color: white;
 }
 /*iluminar las celdas hijos par sin seleccionar el encabezado*/
@@ -39,7 +52,7 @@ tr:nth-child(even){
 }
 /*iluminar las filas a exepcion del encabezado*/
 tr:hover td{
-	background-color: #369681;
+	background-color: #A9D0F5;
 	color:white;
 }
 /*contenedor de los botones*/
