@@ -31,5 +31,3 @@ INSERT INTO cat_helados(sabor, tipoCon, tipoHelado,tipoTam,Precio) VALUES ("Lim√
 INSERT INTO usuarios(nombre, apellido_paterno,apellido_materno, id_Helado) VALUES ("Rosa","Alvarado", "Montes", 1);
 INSERT INTO usuarios(nombre, apellido_paterno,apellido_materno, id_Helado) VALUES ("Rosa","Alvarado", "Montes", 1);
 INSERT INTO usuarios(nombre, apellido_paterno,apellido_materno, id_Helado) VALUES ("Rosa","Alvarado", "Montes", 1);
-
-DELETE FROM cat_helados
