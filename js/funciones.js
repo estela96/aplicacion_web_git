@@ -14,7 +14,6 @@ $(document).ready(function() {
 			obtener_datos();
 
 			//Agregar datos
-/*
 			$(document).on("click","#add", function(){
 				//Nombre de la variable es el id que le pusimos a la columna de tr en donde el usuario agrega datos
 				//con el # seleccionamos el valor
@@ -123,6 +122,5 @@ $(document).ready(function() {
 
 				})
 			
-*/
 
 });

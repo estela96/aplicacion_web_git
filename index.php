@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Login</title>
-	<!-- Agregando los estilos-->
+	<!-- Agregando los estilos y archivos de java script-->
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/funciones.js"></script> 
