@@ -1,5 +1,10 @@
-/*Estilo de toda la página*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*Estilo de la página web*/
 body{
+	background: white;
 	background-image: url("img/helados2.jpg");
 	font-family: Arial;
 	text-align: center;
@@ -15,10 +20,6 @@ body{
     background-color: #464646;
 }
 
-#main-container{
-	margin: 105px auto;
-	width: 600px;
-}
 /*Darle estilo al encabezado */
 h1{
 	font-weight: normal;
@@ -27,56 +28,65 @@ h1{
 	font-weight: 400;
 	font-size: 250%;
 }
+
 /*Darle estilo a la tabla*/
 table{
-	background-color: white;
-	text-align: left;
-	/*Quitar bordes de las celdas*/
-	border-collapse: 0;
-	width: 100%;
+	width: 700px;
+	margin: 100px auto;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: Arial, "Helvica Neue", Helvetica, sans-serif;
+	border-collapse: collapse;
+	box-shadow: 0 0 1px #ccc;
 }
 
-th, td{
-	/*espacio entre celdas*/
-	padding: 20;
+table tr td, th{
+	padding: 5px 10px;
+	border: 1px solid #eee;
 }
-/*Encabezado de la tabla*/
-thead{
-	background-color: #013ADF;
+
+/*Diseño del encabezado de la tabla*/
+table thead{
+	background-color: #0B2161;
 	border-bottom: solid 5px #0489B1;
 	color: white;
 }
-/*iluminar las celdas hijos par sin seleccionar el encabezado*/
-tr:nth-child(even){
-	background-color: #ddd;
+/*Diseño del botón de eliminar*/
+table button{
+	box-shadow: 0 0 1px #fff;
+	padding: 3px 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	border: transparent;
+	background: #FA5858;
+
 }
+
+table #add{
+	background: #01DF3A;
+	color: white;
+}
+
 /*iluminar las filas a exepcion del encabezado*/
-tr:hover td{
-	background-color: #A9D0F5;
+
+table tr:hover td{
+	background-color: #0174DF;
 	color:white;
 }
-/*contenedor de los botones*/
-div{
-	position: absolute;
-	top: 500px;
-	bottom: 0;
-	right: 0;
-	left: 0;
-}
-/*Estilos a los botones*/
 .button{
 	text-decoration: none;
 	padding: 10px;
 	font-weight: 600;
 	font-size: 20px;
 	color: #ffffff;
-	background-color: #1883ba;
+	background-color: #0B0B61;
 	border-radius: 6px;
-	border: 2px solid #0016b0;
+	border: 2px solid #04B4AE;
 
 }
 /*Accion cuando pasamos el ratón por encima del botón*/
 .button:hover{
-	color: #1883ba;
+	color: #0B0B61;
 	background-color: #ffffff;
 }
